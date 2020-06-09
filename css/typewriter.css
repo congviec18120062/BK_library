@@ -4,22 +4,22 @@
   overflow: hidden;
 }
 .css-typing h1:nth-child(1) {
-  width: 350px;
-  -webkit-animation: type 4s steps(40, end),
+  width: 150px;
+  -webkit-animation: type 2s steps(40, end),
     blink 0.5s step-end infinite alternate;
-  animation: type 4s steps(40, end), blink 0.2s step-end infinite alternate;
+  animation: type 2s steps(40, end), blink 0.2s step-end infinite alternate;
   -webkit-animation-fill-mode: forwards;
   animation-fill-mode: forwards;
 }
 
 .css-typing h1:nth-child(2) {
-  width: 300px;
+  width: 400px;
   opacity: 0;
-  -webkit-animation: type2 4s steps(40, end),
+  -webkit-animation: type2 2s steps(40, end),
     blink 0.5s step-end infinite alternate;
-  animation: type2 4s steps(40, end), blink 0.2s step-end infinite alternate;
-  -webkit-animation-delay: 4s;
-  animation-delay: 4s;
+  animation: type2 2s steps(40, end), blink 0.2s step-end infinite alternate;
+  -webkit-animation-delay: 2s;
+  animation-delay: 2s;
   -webkit-animation-fill-mode: forwards;
   animation-fill-mode: forwards;
 }

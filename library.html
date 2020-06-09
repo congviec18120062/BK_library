@@ -14,20 +14,50 @@
 
 <body>
 
-  <!-- Header -->
-  <header class="flex flex-space-between flex-vcenter">
-    <div class="logo">LibraryBK</div>
-    <nav class="max-width">
-      <ul class="flex header-option">
-        <li><a href="#" class="header-option-choose">HOME</a></li>
-        <li><a href="#">LIBRARY</a></li>
-      </ul>
-    </nav>
-    <ul class="header-item flex flex-end">
-      <li><i class="fas fa-search"></i></li>
-      <li><i class="fas fa-shopping-bag"></i></li>
-      <li><i class="fas fa-user"></i></li>
+  <!-- Search -->
+  <section class="search-banner flex flex-center flex-vcenter disable" id="search-banner">
+    <button id="search-banner-off" class="flex flex-center flex-vcenter"><i class="fas fa-times"></i></button>
+    <form action="/search" method="post" class="search-form">
+      <input type="text" name="search" placeholder="Nhập chuỗi cần tìm kiếm" class="search-bar color-white">
+      <button class="color-white"><i class="fas fa-search"></i></button>
+    </form>
+  </section>
+
+  <!-- User option -->
+  <section class="more-option user-option disable" id="user-option">
+    <ul>
+      <li><a href="/user.html"><i class="far fa-address-card"></i> Profile</a></li>
+      <li><button><i class="fas fa-sign-in-alt"></i> Login</button></li>
+      <li><button><i class="far fa-plus-square"></i> Register</button></li>
     </ul>
+  </section>
+
+  <!-- Bag item -->
+  <section class="more-option bag-item disable flex flex-vcenter" id="bag-item">
+    <ul class="">
+      <li>Chưa có tài liệu nào được thêm vào giỏ</li>
+    </ul>
+  </section>
+
+  <!-- Header -->
+  <header class="header-top" id="header">
+    <div class="flex flex-space-between flex-vcenter height-100 header-main">
+      <div class="logo logo-top"><a class="logo-link" href="#">KU Library</a></div>
+      <nav class="max-width header-option">
+        <ul class="flex ">
+          <li><a href="/index.html" class="header-option-item header-option-top">HOME</a></li>
+          <li><a href="/library.html" class="header-option-choose" id="header-choice">LIBRARY</a></li>
+        </ul>
+      </nav>
+      <ul class="header-item flex flex-end">
+        <li id="search-icon"><i class="fas fa-search"></i></li>
+        <li id="bag-icon"><i class="fas fa-shopping-bag"></i></li>
+        <li id="user-icon"><i class="fas fa-user"></i></li>
+      </ul>
+    </div>
+    <div class="progress-container">
+      <div class="progress-bar" id="progress-bar"></div>
+    </div>
   </header>
 
   <!-- Main -->
@@ -64,7 +94,7 @@
               <div class="card-folder-left flex">
                 <img src="./img/folder.svg" alt="">
                 <div class="folder-information">
-                  <div class="folder-name">Biology</div>
+                  <div class="folder-name"><a href="/article.html">Biology</a></div>
                   <div class="folder-date">22/5/2020</div>
                   <div class="folder-author">Nguyễn Hoàng Nam</div>
                   <div class="flex">
@@ -91,7 +121,7 @@
               <div class="card-folder-left flex">
                 <img src="./img/folder.svg" alt="">
                 <div class="folder-information">
-                  <div class="folder-name">Biology</div>
+                  <div class="folder-name"><a href="/article.html">Biology</a></div>
                   <div class="folder-date">22/5/2020</div>
                   <div class="folder-author">Nguyễn Hoàng Nam</div>
                   <div class="flex">
@@ -118,7 +148,7 @@
               <div class="card-folder-left flex">
                 <img src="./img/folder.svg" alt="">
                 <div class="folder-information">
-                  <div class="folder-name">Biology</div>
+                  <div class="folder-name"><a href="/article.html">Biology</a></div>
                   <div class="folder-date">22/5/2020</div>
                   <div class="folder-author">Nguyễn Hoàng Nam</div>
                   <div class="flex">
@@ -145,7 +175,7 @@
               <div class="card-folder-left flex">
                 <img src="./img/folder.svg" alt="">
                 <div class="folder-information">
-                  <div class="folder-name">Biology</div>
+                  <div class="folder-name"><a href="/article.html">Biology</a></div>
                   <div class="folder-date">22/5/2020</div>
                   <div class="folder-author">Nguyễn Hoàng Nam</div>
                   <div class="flex">
@@ -172,7 +202,7 @@
               <div class="card-folder-left flex">
                 <img src="./img/folder.svg" alt="">
                 <div class="folder-information">
-                  <div class="folder-name">Biology</div>
+                  <div class="folder-name"><a href="/article.html">Biology</a></div>
                   <div class="folder-date">22/5/2020</div>
                   <div class="folder-author">Nguyễn Hoàng Nam</div>
                   <div class="flex">
@@ -207,8 +237,8 @@
     <article class="main-grey flex flex-center">
       <div class="max-width">
         <div class="main-title flex flex-column flex-vcenter">
-          <h2 class="color-orange">LibraryBK</h2>
-          <p class="main-subtext">LibraryBK có hệ thống lien lạc qua thông qua nhiều nền tảng với thời gian phản hồi nhanh và thông tin đầy đủ.</p>
+          <h2 class="color-orange">KU Library</h2>
+          <p class="main-subtext">KU Library có hệ thống lien lạc qua thông qua nhiều nền tảng với thời gian phản hồi nhanh và thông tin đầy đủ.</p>
         </div>
         <div class="flex flex-center">
           <div class="card-social flex flex-center flex-vcenter">
@@ -235,6 +265,9 @@
       </div>
     </article>
   </footer>
+
+  <script src="./lib/jquery.min.js"></script>
+  <script src="./js/index.js"></script>
 </body>
 
 </html>
