@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./lib/aos.css">
+  <link rel="stylesheet" href="./css/main.css">
+  <link rel="stylesheet" href="./css/typewriter.css">
+  <link rel="stylesheet" href="./lib/all.min.css">
+  <script src="./lib/all.min.js"></script>
+  <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"> -->
+  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/js/all.min.js"></script> -->
+  <title>LibraryBK</title>
+</head>
+
+<body>
+  <!-- Search -->
+  <section class="search-banner flex flex-center flex-vcenter disable" id="search-banner">
+    <button id="search-banner-off" class="flex flex-center flex-vcenter"><i class="fas fa-times"></i></button>
+    <form action="/search" method="post" class="search-form">
+      <input type="text" name="search" placeholder="Nhập chuỗi cần tìm kiếm" class="search-bar color-white">
+      <button class="color-white"><i class="fas fa-search"></i></button>
+    </form>
+  </section>
+
+  <!-- User option -->
+  <section class="more-option user-option disable" id="user-option">
+    <ul>
+      <li><a href="#"><i class="far fa-address-card"></i> Profile</a></li>
+      <li><button><i class="fas fa-sign-in-alt"></i> Login</button></li>
+      <li><button><i class="far fa-plus-square"></i> Register</button></li>
+    </ul>
+  </section>
+
+  <!-- Bag item -->
+  <section class="more-option bag-item disable flex flex-vcenter" id="bag-item">
+    <ul class="">
+      <li>Chưa có tài liệu nào được thêm vào giỏ</li>
+    </ul>
+  </section>
+
+  <!-- Header -->
+  <header class="header-top" id="header">
+    <div class="flex flex-space-between flex-vcenter height-100 header-main">
+      <div class="logo logo-top"><a class="logo-link" href="#">LibraryBK</a></div>
+      <nav class="max-width header-option">
+        <ul class="flex ">
+          <li><a href="#" class="header-option-choose" id="header-choice">HOME</a></li>
+          <li><a href="#" class="header-option-item header-option-top">LIBRARY</a></li>
+        </ul>
+      </nav>
+      <ul class="header-item flex flex-end">
+        <li id="search-icon"><i class="fas fa-search"></i></li>
+        <li id="bag-icon"><i class="fas fa-shopping-bag"></i></li>
+        <li id="user-icon"><i class="fas fa-user"></i></li>
+      </ul>
+    </div>
+    <div class="progress-container">
+      <div class="progress-bar" id="progress-bar"></div>
+    </div>
+  </header>
+
+  <!-- Main -->
+  <main>
+
+    <!-- Blank space -->
+    <article class="blank"></article>
+
+    <!-- Banner -->
+    <article class="banner flex flex-center" id="home">
+      <div class="max-width flex flex-column flex-center flex-vstart">
+        <h2 class="color-orange underline-wave">#LibraryBK</h2>
+        <div class="css-typing">
+          <h1>Thư Viện tài liệu <span class="color-orange">lớn</span></h1>
+          <h1>tìm kiếm <span class="color-orange">nhanh</span></h1>
+        </div>
+        <p class="banner-subtitle">Tìm kiếm tài liệu chuyên ngành đựa trên nguồn sưu tầm từ các thế hệ đi trước.</p>
+        <button data-aos="fade-right">
+          <a href="#">LIBRARY NOW <span class="arrow-right"><i class="fas fa-arrow-right"></i></span></a>
+        </button>
+      </div>
+    </article>
+
+    <!-- Main feature -->
+    <article class="main-white flex flex-center">
+      <div class="max-width">
+        <div class="main-title">
+          <h2>THƯ VIỆN TÀI LIỆU <span class="color-orange">LỚN</span></h2>
+        </div>
+        <div class="flex flex-space-between">
+          <div class="card-article">
+            <img src="./img/grown.svg" data-aos="zoom-in" data-aos-delay="0" alt="folder">
+            <p>Cộng đồng đóng góp</p>
+          </div>
+          <div class="card-article">
+            <img src="./img/check.svg" data-aos="zoom-in" data-aos-delay="300" alt="folder">
+            <p>Kiểm đuyệt tài liệu</p>
+          </div>
+          <div class="card-article">
+            <img src="./img/chart.svg" data-aos="zoom-in" data-aos-delay="600" alt="folder">
+            <p>Thống kê trực quan</p>
+          </div>
+          <div class="card-article">
+            <img src="./img/borrow.svg" data-aos="zoom-in" data-aos-delay="900" alt="folder">
+            <p>Mượn sách đễ dàng</p>
+          </div>
+        </div>
+      </div>
+    </article>
+
+    <!-- Join with us -->
+    <article class="main-grey flex flex-center">
+      <div class="max-width flex flex-space-between">
+        <div class="main-grey-left" id="join"></div>
+        <div class="main-grey-right flex flex-column flex-vcenter">
+          <div class="main-title">
+            <h2>JOIN WITH US</h2>
+            <p>Tạo tài khoản và tham gia cùng chúng tôi để trở thành người dóng góp tài liệu cho các thế hệ mai sau.</p>
+          </div>
+          <button data-aos="fade-right" class="main-grey-button">
+            REGISTER NOW <span><i class="fas fa-arrow-right"></i>
+          </button>
+        </div>
+      </div>
+    </article>
+
+    <!-- Latest article  -->
+    <article class="main-white flex flex-center">
+      <div class="max-width">
+        <div class="main-title flex flex-column flex-vcenter">
+          <h2>TÀI LIỆU <span class="color-orange">MỚI</span></h2>
+          <p class="main-subtext">Tài liệu được cập nhập thường xuyên bởi đội ngũ quản lý thư viện.</p>
+        </div>
+        <div class="flex flex-space-between">
+          <div class="card-article">
+            <img src="./img/folder.svg" data-aos="zoom-in" data-aos-delay="0" alt="folder">
+            <p>Biology</p>
+          </div>
+          <div class="card-article">
+            <img src="./img/folder.svg" data-aos="zoom-in" data-aos-delay="300" alt="folder">
+            <p>Chemistry</p>
+          </div>
+          <div class="card-article">
+            <img src="./img/folder.svg" data-aos="zoom-in" data-aos-delay="600" alt="folder">
+            <p>Mathematical</p>
+          </div>
+          <div class="card-article">
+            <img src="./img/folder.svg" data-aos="zoom-in" data-aos-delay="900" alt="folder">
+            <p>Physical</p>
+          </div>
+        </div>
+      </div>
+    </article>
+
+    <!-- Stay with us -->
+    <article class="main-grey flex flex-center">
+      <div class="max-width flex flex-space-between">
+        <div class="main-grey-left" id="stay"></div>
+        <div class="main-grey-right">
+          <div class="main-title">
+            <h2>STAY WITH US</h2>
+            <p>Đăng ký để nhận thông báo sớm nhất về các tài liệu mới được cập nhập trên thư viện.</p>
+          </div>
+          <form action="/subscribe" method="post" class="subscribe-form flex flex-center">
+            <input type="text" name="subscribe" placeholder="Nhập mail sinh viên" class="subscribe">
+            <button>SUBSCRIBE</button>
+          </form>
+        </div>
+      </div>
+    </article>
+
+    <!-- Search -->
+    <article class="main-white flex flex-center">
+      <div class="max-width">
+        <div class="main-title flex flex-column flex-vcenter">
+          <h2>TÌM KIẾM <span class="color-orange typewrite" data-period="2000" data-type='["NHANH", "CHÍNH XÁC"]'></span><span class="wrap"></span></h2>
+          <p class="main-subtext">Bộ tìm kiếm được tích hợp Elasticsearch với tốc độ tìm kiếm gần như Realtime.</p>
+        </div>
+        <div class="flex flex-center flex-vcenter">
+          <form action="/search" method="post" class="search-form">
+            <input type="text" name="search" placeholder="Nhập chuỗi cần tìm kiếm" class="search-bar">
+            <button><i class="fas fa-search"></i></button>
+          </form>
+        </div>
+      </div>
+    </article>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+
+    <!-- Social media -->
+    <article class="main-grey flex flex-center">
+      <div class="max-width">
+        <div class="main-title flex flex-column flex-vcenter">
+          <h2 class="color-orange">LibraryBK</h2>
+          <p class="main-subtext">LibraryBK có hệ thống lien lạc qua thông qua nhiều nền tảng với thời gian phản hồi nhanh và thông tin đầy đủ.</p>
+        </div>
+        <div class="flex flex-center">
+
+          <!-- Facebook -->
+          <div data-aos="flip-left" data-aos-delay="0" class="card-social flex flex-center flex-vcenter" id="facebook">
+            <i class="fab fa-facebook-f"></i>
+          </div>
+
+          <!-- LinkedIn -->
+          <div data-aos="flip-left" data-aos-delay="300" class="card-social flex flex-center flex-vcenter" id="linkedin">
+            <i class="fab fa-linkedin-in"></i>
+          </div>
+
+          <!-- Instagram -->
+          <div data-aos="flip-left" data-aos-delay="600" class="card-social flex flex-center flex-vcenter" id="instagram">
+            <i class="fab fa-instagram"></i>
+          </div>
+
+          <!-- Google -->
+          <div data-aos="flip-left" data-aos-delay="900" class="card-social flex flex-center flex-vcenter" id="google">
+            <i class="fab fa-google"></i>
+          </div>
+        </div>
+      </div>
+
+    </article>
+
+    <!-- Copyright -->
+    <article class="copyright-box flex flex-center">
+      <div class="max-width flex flex-vcenter">
+        <p class="copyright">Copyright © Nguyễn Hoàng Nam. All Rights Reserved</p>
+      </div>
+    </article>
+  </footer>
+  <script src="./lib/jquery.min.js"></script>
+  <script src="./lib/aos.js"></script>
+  <script>
+    AOS.init({
+      once: true
+    });
+  </script>
+  <script src="./js/typewriter.js"></script>
+  <script src="./js/index.js"></script>
+</body>
+
+</html>
