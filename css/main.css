@@ -171,13 +171,13 @@ h2 {
 }
 
 .banner h1 {
-  font-size: 35px;
-  padding-top: 5px;
-  padding-bottom: 5px;
+  font-size: 30px;
+  /* padding-top: 5px; */
+  margin-bottom: 25px;
 }
 
 .banner p {
-  padding-bottom: 20px;
+  /* padding-bottom: 20px; */
 }
 
 .banner button {
@@ -210,27 +210,29 @@ h2 {
 }
 
 .blank {
-  height: 50px;
+  height: 70px;
   width: 100%;
 }
 
 header {
   position: fixed;
   width: 100%;
-  height: 50px;
+
   z-index: 1000;
 }
 
 .header-stick {
-  background-color: rgba(94, 94, 94, 0.9);
+  background-color: rgba(94, 94, 94, 1);
   color: white;
-  transition: background-color 0.4s, color 0.2s;
+  height: 50px;
+  transition: background-color 0.4s, color 0.2s, height 0.4s;
 }
 
 .header-top {
   background-color: white;
   color: black;
-  transition: background-color 0.3s, color 0.2s;
+  height: 70px;
+  transition: background-color 0.3s, color 0.2s, height 0.4s;
 }
 
 .header-main {
